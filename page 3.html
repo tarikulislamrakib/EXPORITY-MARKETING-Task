@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tarikul Islam</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap">
+    <style>
+        *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-image:url("Images/background.svg")
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+}
+.form_container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 50px 40px 20px 40px;
+  background-color: white;
+  box-shadow: 0px 106px 42px rgba(0, 0, 0, 0.01),
+    0px 59px 36px rgba(0, 0, 0, 0.05), 0px 26px 26px rgba(0, 0, 0, 0.09),
+    0px 7px 15px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+  font-family: "Inter", sans-serif;
+  
+}
+
+
+.title_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #212121;
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+ display: inline-block;
+ padding: 0.9rem 1.8rem;
+ font-size: 16px;
+ font-weight: 700;
+ color: #192561;
+ border: 3px solid #84c5e2;
+ cursor: pointer;
+ position: relative;
+ background-color: transparent;
+ text-decoration: none;
+ overflow: hidden;
+ z-index: 1;
+ font-family: inherit;
+}
+
+.btn::before {
+ content: "";
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ background-color: #84c5e2;
+ transform: translateX(-100%);
+ transition: all .3s;
+ z-index: -1;
+}
+
+.btn:hover::before {
+ transform: translateX(0);
+}
+.blur{
+  background: rgba(255, 255, 255, 0.23);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+}
+
+
+
+    </style>
+
+  </head>
+
+
+  <body>
+    <div class="center">
+        <form class="form_container">
+          
+            <div class="title_container">
+              <p class="title">Are you looking for a Mortgage Renewal</p>
+            </div>
+            <br>  
+            <br>
+            <a class="btn" href="#">720+ Excellent</a>
+            <a class="btn" href="page 4.html">719-690 Very Good</a>
+            <a class="btn" href="#">689-640 Good</a>
+            <a class="btn" href="#">639-560 Fair</a>
+            <a class="btn" href="#">560- Poor</a>
+
+         
+            
+        </form>
+      </div>
+
+  </body>
+  </html>
